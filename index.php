@@ -5,7 +5,7 @@
  $content = $domOBJ->getElementsByTagName("jet");
  
  ?>
- <ul>
+ <ul style="font-family:Trebuchet MS">
     <?php
  foreach( $content as $data )
  {
