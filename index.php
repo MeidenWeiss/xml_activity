@@ -15,7 +15,7 @@
    $type = $data->getElementsByTagName("type")->item(0)->nodeValue;
    $created = $data->getElementsByTagName("manufacturer")->item(0)->nodeValue;
    $country = $data->getElementsByTagName("country")->item(0)->nodeValue;
-   echo "<li> <h3> $name </h3> <br>
+   echo "<li> <h4> $name </h4>
             <ul>
                 <li>$gen - Generation</li>
                 <li>Aircraft type: $type </li>
