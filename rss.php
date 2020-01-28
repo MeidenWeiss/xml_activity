@@ -10,8 +10,7 @@
     $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
     while($row=mysqli_fetch_assoc($query)) {
         extract($row);
-        
-        $rssfeed .= '<item>';
+
         $rssfeed .= '<jet>';
         $rssfeed .= '<name>' . $jet_Name . '</name>';
         $rssfeed .= '<type>' . $jet_type . '</type>';
@@ -19,7 +18,6 @@
         $rssfeed .= '<manufacturer>' . $Manufacturer . '</manufacturer>';
         $rssfeed .= '<country>' . $Country . '</country>';
         $rssfeed .= '</jet>';
-        $rssfeed .= '</item>';
     }
  
     $rssfeed .= '</channel>';
