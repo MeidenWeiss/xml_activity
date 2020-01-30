@@ -6,6 +6,7 @@
  
  ?>
  <ul style="font-family:Trebuchet MS">
+  You are now viewing in XML mode
     <?php
  foreach( $content as $data )
  {
@@ -15,11 +16,10 @@
    $type = $data->getElementsByTagName("type")->item(0)->nodeValue;
    $created = $data->getElementsByTagName("manufacturer")->item(0)->nodeValue;
    $country = $data->getElementsByTagName("country")->item(0)->nodeValue;
-   echo "<li> <h4> $name </h4>
+   echo "<li> <h4> $name - <b> $created </b> </h4>
             <ul>
-                <li>$gen - Generation</li>
                 <li>Aircraft type: $type </li>
-                <li>Manufacturer: $created </li>
+                <li>$gen - Generation</li>
                 <li>Country: $country </li>
             </ul> <br>
         </li>";
