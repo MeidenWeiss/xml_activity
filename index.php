@@ -6,7 +6,7 @@
  
  ?>
  <ul style="font-family:Trebuchet MS">
-  You are now viewing in XML mode
+  You are now viewing in XML mode || <a href="http://school-temp.herokuapp.com/"> XML Mode </a> / <a href="http://school-temp.herokuapp.com/json_activity/index.php"> JSON Mode </a>
     <?php
  foreach( $content as $data )
  {
